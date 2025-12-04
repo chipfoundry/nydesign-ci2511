@@ -1,0 +1,8 @@
+modules:
+# Hard coded module locations - other modules will be assigned dynamically
+  - name: "chip_rom"
+    x: 7
+    y: 15
+  - name: "factory_test"
+    x: 7
+    y: 14

@@ -1,0 +1,7 @@
+id: 'ci2511'
+name: 'NYDesign CI2511'
+pdk: 'sky130A'
+end_date: '2026-11-10'
+project_dir: 'projects'
+top_level_macro: 'openframe_project_wrapper'
+powered_netlists: true

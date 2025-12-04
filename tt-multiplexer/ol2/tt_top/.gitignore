@@ -1,0 +1,7 @@
+runs
+failures_report.json
+lef/*.lef
+gds/*.gds
+verilog/*.v
+spef/*.spef
+config-tmp.json
