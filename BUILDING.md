@@ -61,3 +61,47 @@ You'll find the final GDS in `tt-multiplexer/ol2/tt_top/runs/RUN_*/final/gds/ope
 ```bash
 python tt/configure.py --copy-final-results
 ```
+
+## Generate Datasheet
+
+To generate the chip datasheet in markdown format:
+
+```bash
+python tt/configure.py --dump-markdown datasheet.md
+```
+
+This will create a comprehensive datasheet with all project information, pinouts, and documentation.
+
+To also generate a PDF version (requires `pandoc` and `xelatex`):
+
+```bash
+python tt/configure.py --dump-markdown datasheet.md --dump-pdf datasheet.pdf
+```
+
+**Requirements for PDF generation:**
+- `pandoc` installed (`brew install pandoc` on macOS)
+- `xelatex` (comes with MacTeX or TeX Live distribution)
+
+**Installing xelatex on macOS:**
+- **Option 1 (Recommended)**: Install BasicTeX (smaller, ~100MB):
+  ```bash
+  brew install --cask basictex
+  # After installation, update PATH:
+  eval "$(/usr/libexec/path_helper)"
+  # Install required LaTeX packages:
+  sudo tlmgr update --self
+  sudo tlmgr install fontspec xunicode xltxtra realscripts
+  ```
+- **Option 2**: Install full MacTeX (large, ~4GB, includes all packages):
+  ```bash
+  brew install --cask mactex
+  ```
+
+After installation, you may need to restart your terminal or run `eval "$(/usr/libexec/path_helper)"` to update PATH. If you get LaTeX errors when generating PDFs, you may need to install additional packages with `tlmgr install <package-name>`.
+
+The datasheet includes:
+- Chip map and layout information
+- All projects with details (author, description, pinout, etc.)
+- Pinout information
+- Multiplexer documentation
+- Credits
