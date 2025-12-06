@@ -1,0 +1,517 @@
+{
+  "name": "NYDesign CI2511",
+  "repo": "https://github.com/chipfoundry/nydesign-ci2511.git",
+  "commit": "7aea492b02764700ff93b57d9dc27691c363c38d",
+  "commit_date": 1765049084,
+  "layout": {
+    "muxes": [
+      [
+        "digital",
+        "digital",
+        "digital",
+        "digital",
+        "digital",
+        "digital",
+        "digital",
+        "digital",
+        "digital",
+        "digital",
+        "digital",
+        "analog",
+        "digital",
+        "digital",
+        "digital",
+        "digital"
+      ],
+      [
+        "digital",
+        "digital",
+        "digital",
+        "digital",
+        "digital",
+        "analog",
+        "digital",
+        "digital",
+        "digital",
+        "digital",
+        "digital",
+        "digital",
+        "digital",
+        "digital",
+        "digital",
+        "digital"
+      ]
+    ]
+  },
+  "version": 3,
+  "projects": [
+    {
+      "macro": "tt_um_chip_rom",
+      "address": 0,
+      "x": 7,
+      "y": 15,
+      "tiles": "1x1",
+      "repo": "https://github.com/TinyTapeout/tt-chip-rom",
+      "commit": "bb743722e70e5313617c15b7d6f487745634a0fa"
+    },
+    {
+      "macro": "tt_um_factory_test",
+      "address": 1,
+      "x": 7,
+      "y": 14,
+      "tiles": "1x1",
+      "repo": "https://github.com/TinyTapeout/ttsky25b-factory-test",
+      "commit": "e66b96198b75c954890a119243b2b327f3e59792"
+    },
+    {
+      "macro": "tt_um_wokwi_447359224225270785",
+      "address": 911,
+      "x": 0,
+      "y": 0,
+      "tiles": "1x1",
+      "repo": "https://github.com/albert-battagliotti-iv-stack/intro-to-esce-1010-1118",
+      "commit": "9a51873ca870c39be83c8ba4b397c8078affe836"
+    },
+    {
+      "macro": "tt_um_wokwi_447982653059750913",
+      "address": 909,
+      "x": 1,
+      "y": 0,
+      "tiles": "1x1",
+      "repo": "https://github.com/Dodecah3dron/IC-Design-Submission-4bit-s-up-counter",
+      "commit": "31f85353abab20c49abb32ef92adb77b33fbb288"
+    },
+    {
+      "macro": "tt_um_wokwi_447268109303873537",
+      "address": 907,
+      "x": 2,
+      "y": 0,
+      "tiles": "1x1",
+      "repo": "https://github.com/madelyndaleo/4-bit-asynchronous-adder",
+      "commit": "a84344009c0aee2aa21b955e27e4160c72de8726"
+    },
+    {
+      "macro": "tt_um_wokwi_446716842630319105",
+      "address": 905,
+      "x": 3,
+      "y": 0,
+      "tiles": "1x1",
+      "repo": "https://github.com/bit-Boys/FullOneBitAdder",
+      "commit": "46921cd87851b9e9752b6fccf69ce974cc76c6bf"
+    },
+    {
+      "macro": "tt_um_wokwi_446996314264114177",
+      "address": 903,
+      "x": 4,
+      "y": 0,
+      "tiles": "1x1",
+      "repo": "https://github.com/webwizardsaanvi/7-segment-display",
+      "commit": "e4c337c539b41848f585835d4e96656e9a71dd46"
+    },
+    {
+      "macro": "tt_um_wokwi_447821705259994113",
+      "address": 901,
+      "x": 5,
+      "y": 0,
+      "tiles": "1x1",
+      "repo": "https://github.com/garywong12345/4-bit-asynchronous-up-counter.git",
+      "commit": "04bb38dd65e7e9aa2d030fcc54346f6d4495db9e"
+    },
+    {
+      "macro": "tt_um_wokwi_446717164532704257",
+      "address": 899,
+      "x": 6,
+      "y": 0,
+      "tiles": "1x1",
+      "repo": "https://github.com/davidtverskoy/Intro-to-ECSE-IC-design-submission",
+      "commit": "da4554fea7bb8c14485cdd934d2d002d086cf492"
+    },
+    {
+      "macro": "tt_um_wokwi_446997400401235969",
+      "address": 897,
+      "x": 7,
+      "y": 0,
+      "tiles": "1x1",
+      "repo": "https://github.com/42millionpeople/ECSE-1010_Lab-4_7-Segment-Decoder",
+      "commit": "3e057664034f0de8eb72ef68e35928a0c08a5a44"
+    },
+    {
+      "macro": "tt_um_wokwi_447909765247473665",
+      "address": 961,
+      "x": 8,
+      "y": 0,
+      "tiles": "1x1",
+      "repo": "https://github.com/lockmunter-collab/IC-Design-Submission",
+      "commit": "0e9c311681aba305fdddd16cba60cfec8fd49a03"
+    },
+    {
+      "macro": "tt_um_wokwi_447936112928476161",
+      "address": 963,
+      "x": 9,
+      "y": 0,
+      "tiles": "1x1",
+      "repo": "https://github.com/cbucher834/Wokwinov21",
+      "commit": "a4a534c2a972d7c1472e15b35360cfc4842ee4ab"
+    },
+    {
+      "macro": "tt_um_wokwi_446996359464033281",
+      "address": 965,
+      "x": 10,
+      "y": 0,
+      "tiles": "1x1",
+      "repo": "https://github.com/brandonm1026/Class-24-Activity",
+      "commit": "1e568103e3a7fd2e1cd5558626f5751a620d4dc1"
+    },
+    {
+      "macro": "tt_um_wokwi_447811843763790849",
+      "address": 967,
+      "x": 11,
+      "y": 0,
+      "tiles": "1x1",
+      "repo": "https://github.com/DJ-Fortissimo/Intro-to-ECSE-Lab-4-Bit-Counter",
+      "commit": "30dcb428c6dab40de219f0b1f01847a42a109b08"
+    },
+    {
+      "macro": "tt_um_wokwi_443363939852179457",
+      "address": 969,
+      "x": 12,
+      "y": 0,
+      "tiles": "1x1",
+      "repo": "https://github.com/entropicentity/Traffic-Toggling-IC",
+      "commit": "1f4769fa6562c778fd10fdcb42ba50020a887f34"
+    },
+    {
+      "macro": "tt_um_wokwi_446349817444809729",
+      "address": 971,
+      "x": 13,
+      "y": 0,
+      "tiles": "1x1",
+      "repo": "https://github.com/technical-0/intro-to-ecse-demo-1031",
+      "commit": "eeb96dc6d953f99661d67db8be64453c68f6832e"
+    },
+    {
+      "macro": "tt_um_wokwi_447980268131973121",
+      "address": 973,
+      "x": 14,
+      "y": 0,
+      "tiles": "1x1",
+      "repo": "https://github.com/jnldzg1013gmailcom/1-bit-adder-circuit",
+      "commit": "9778e79fe90861663de4cbb95a294fb27c7febb4"
+    },
+    {
+      "macro": "tt_um_wokwi_447361647355656193",
+      "address": 975,
+      "x": 15,
+      "y": 0,
+      "tiles": "1x1",
+      "repo": "https://github.com/notgzelle/1-bit-full-adder-IC-design-submission",
+      "commit": "9ba3d367b444990d0575d097e59a0f2e84446ed5"
+    },
+    {
+      "macro": "tt_um_wokwi_447824517948935169",
+      "address": 910,
+      "x": 0,
+      "y": 1,
+      "tiles": "1x1",
+      "repo": "https://github.com/nonkayra/ECSE-4B.git",
+      "commit": "f851cd96530922bf496563024ed0d90268c4cf65"
+    },
+    {
+      "macro": "tt_um_wokwi_446912470174316545",
+      "address": 908,
+      "x": 1,
+      "y": 1,
+      "tiles": "1x1",
+      "repo": "https://github.com/sgunth29/IC-Design-Class-Activity-24",
+      "commit": "6f3f6c3f3d92df03d2e09ce1af8a5a6120aebb4b"
+    },
+    {
+      "macro": "tt_um_wokwi_449089319458690049",
+      "address": 906,
+      "x": 2,
+      "y": 1,
+      "tiles": "1x1",
+      "repo": "https://github.com/jodonnell2406/ecse-wokwi-classwork",
+      "commit": "1723a4ea69545ccd5dc1abafe65b569036bac527"
+    },
+    {
+      "macro": "tt_um_wokwi_446357179536698369",
+      "address": 904,
+      "x": 3,
+      "y": 1,
+      "tiles": "1x1",
+      "repo": "https://github.com/ethansam9/2-Bit-Adder",
+      "commit": "cea45b06719585849162f4e9336c07e9909d4e8c"
+    },
+    {
+      "macro": "tt_um_wokwi_446357766648124417",
+      "address": 902,
+      "x": 4,
+      "y": 1,
+      "tiles": "1x1",
+      "repo": "https://github.com/nhoj98/intro-to-ecse-1010-10-31-demo",
+      "commit": "b6fa522373ce5f01d465001a42565f3e8e917c4d"
+    },
+    {
+      "macro": "tt_um_wokwi_446358765191457793",
+      "address": 900,
+      "x": 5,
+      "y": 1,
+      "tiles": "1x1",
+      "repo": "https://github.com/ryan718585/4-bit-ring-counter",
+      "commit": "37868dcac4c8965c678aee9b756dfd8337ee743f"
+    },
+    {
+      "macro": "tt_um_wokwi_446990787716412417",
+      "address": 898,
+      "x": 6,
+      "y": 1,
+      "tiles": "1x1",
+      "repo": "https://github.com/hung-xuan-ngo-savg/2-bits-magnitude-comparator",
+      "commit": "e2d13ba71f49edfaa3ecd51889508c16d7be5292"
+    },
+    {
+      "macro": "tt_um_wokwi_447358043468808193",
+      "address": 896,
+      "x": 7,
+      "y": 1,
+      "tiles": "1x1",
+      "repo": "https://github.com/Roniel-Peralta/4-Bit-Counter-11-14",
+      "commit": "246f2e80b44c299a46f1ca1e1b3b27cdd0f543d1"
+    },
+    {
+      "macro": "tt_um_wokwi_447358175526479873",
+      "address": 960,
+      "x": 8,
+      "y": 1,
+      "tiles": "1x1",
+      "repo": "https://github.com/atscosmo/lab4",
+      "commit": "de827c6d18557c24ac22db3345d14ed006800bd1"
+    },
+    {
+      "macro": "tt_um_wokwi_446983746674406401",
+      "address": 962,
+      "x": 9,
+      "y": 1,
+      "tiles": "1x1",
+      "repo": "https://github.com/henevans25/wokwimultiplexor",
+      "commit": "1bf52c99fc32188caf08f8c3bcd61849315715c1"
+    },
+    {
+      "macro": "tt_um_wokwi_447383630811531265",
+      "address": 526,
+      "x": 0,
+      "y": 7,
+      "tiles": "1x2",
+      "repo": "https://github.com/computersandrew/Class-24-Activity-IC-Design-Submission.git",
+      "commit": "1bf386ad7a27e5fe4d702d88eb01bc6e0ea664e2"
+    },
+    {
+      "macro": "tt_um_wokwi_446992137588357121",
+      "address": 964,
+      "x": 10,
+      "y": 1,
+      "tiles": "1x1",
+      "repo": "https://github.com/MylesKocsis/7-Segment-Display-Intro-to-ECSE",
+      "commit": "acaa8662b65c730db2be63aa0b189a884afb53e5"
+    },
+    {
+      "macro": "tt_um_wokwi_447996382457009153",
+      "address": 966,
+      "x": 11,
+      "y": 1,
+      "tiles": "1x1",
+      "repo": "https://github.com/Peter3233/-IC-Design-Submission---one-bit-full-adder.git",
+      "commit": "aeb53abeb2459ecfd352e62def3150b8006e1e86"
+    },
+    {
+      "macro": "tt_um_wokwi_448100111902375937",
+      "address": 968,
+      "x": 12,
+      "y": 1,
+      "tiles": "1x1",
+      "repo": "https://github.com/jaredierardi/IC-Design",
+      "commit": "12abd8e82e9bc7afd6c3543d74faacf6f42f7184"
+    },
+    {
+      "macro": "tt_um_wokwi_446987715197491201",
+      "address": 970,
+      "x": 13,
+      "y": 1,
+      "tiles": "1x1",
+      "repo": "https://github.com/mattsarkar10/IC-Design",
+      "commit": "76f2bb891e971892c73d6caa840efdf46cb24cfe"
+    },
+    {
+      "macro": "tt_um_wokwi_446448034226075649",
+      "address": 972,
+      "x": 14,
+      "y": 1,
+      "tiles": "1x1",
+      "repo": "https://github.com/elijahrpulga/ECSE-Lab_4A.git",
+      "commit": "386f9a2ca4c54708d3e13c86212eefdb2638cf2f"
+    },
+    {
+      "macro": "tt_um_wokwi_447449214971248641",
+      "address": 974,
+      "x": 15,
+      "y": 1,
+      "tiles": "1x1",
+      "repo": "https://github.com/elenidough/Seven-Segment-Decoder-",
+      "commit": "bd2355b57cbbb066dc80adf8f1945929622e2f1b"
+    },
+    {
+      "macro": "tt_um_wokwi_447187389911513089",
+      "address": 783,
+      "x": 0,
+      "y": 2,
+      "tiles": "1x1",
+      "repo": "https://github.com/Rodyker/intro-to-ecse-IC",
+      "commit": "82b871f49765bb2081e044d41fb62102381cb023"
+    },
+    {
+      "macro": "tt_um_wokwi_447911024130222081",
+      "address": 781,
+      "x": 1,
+      "y": 2,
+      "tiles": "1x1",
+      "repo": "https://github.com/jeaink0607/lab4b",
+      "commit": "4e4501a36e65edca5f02521dd61ac5ba29b37868"
+    },
+    {
+      "macro": "tt_um_wokwi_446992592396712961",
+      "address": 779,
+      "x": 2,
+      "y": 2,
+      "tiles": "1x1",
+      "repo": "https://github.com/jacknotaro7/JackNotaro",
+      "commit": "5b7bc43a73336a525bed65396ff44cbc49024852"
+    },
+    {
+      "macro": "tt_um_wokwi_447989872513811457",
+      "address": 777,
+      "x": 3,
+      "y": 2,
+      "tiles": "1x1",
+      "repo": "https://github.com/jpetrarca4/ECSE-1010-IC-Design",
+      "commit": "25a897b778cfd4bc10ee6544f998606e834fea23"
+    },
+    {
+      "macro": "tt_um_wokwi_446987090831206401",
+      "address": 775,
+      "x": 4,
+      "y": 2,
+      "tiles": "1x1",
+      "repo": "https://github.com/melissagdeluise-png/ecse-2bit-full-adder-circuit.git",
+      "commit": "5a10f9225104c39285d8a62d049b5ac64071320e"
+    },
+    {
+      "macro": "tt_um_wokwi_447830736860122113",
+      "address": 773,
+      "x": 5,
+      "y": 2,
+      "tiles": "1x1",
+      "repo": "https://github.com/nick-gl/Lab_4A_adder",
+      "commit": "916bf9bd064450b4c446b24da9edb574da81cdda"
+    },
+    {
+      "macro": "tt_um_wokwi_446983511627671553",
+      "address": 771,
+      "x": 6,
+      "y": 2,
+      "tiles": "1x1",
+      "repo": "https://github.com/orbitle/ECSE1010-Class-24-Activity",
+      "commit": "88e9d9aa71a73370a304ea68b56bbc7f6af2ddfd"
+    },
+    {
+      "macro": "tt_um_wokwi_447933463901882369",
+      "address": 769,
+      "x": 7,
+      "y": 2,
+      "tiles": "1x1",
+      "repo": "https://github.com/tommybarker2/Wokwi-Template",
+      "commit": "8e4032eaac8e681ed402c7b8073529ebb899de8c"
+    },
+    {
+      "macro": "tt_um_wokwi_446715442694161409",
+      "address": 833,
+      "x": 8,
+      "y": 2,
+      "tiles": "1x1",
+      "repo": "https://github.com/Xandrosy/IC-Design",
+      "commit": "1e54061ba106ec91502a090039ecccfc636f8ddd"
+    },
+    {
+      "macro": "tt_um_wokwi_447983687789484033",
+      "address": 835,
+      "x": 9,
+      "y": 2,
+      "tiles": "1x1",
+      "repo": "https://github.com/elin20-hub/lab4b",
+      "commit": "786932be29c0ba9e0f8b3905e86163e53aca94f7"
+    },
+    {
+      "macro": "tt_um_wokwi_447644378544688129",
+      "address": 837,
+      "x": 10,
+      "y": 2,
+      "tiles": "1x1",
+      "repo": "https://github.com/LeeASC10679/4-bit-synchronous-up-counter-using-T-flip-flop-ICs-",
+      "commit": "1a0c439153673005f1a3e1722fd49d8d4274561b"
+    },
+    {
+      "macro": "tt_um_wokwi_447895555211453441",
+      "address": 839,
+      "x": 11,
+      "y": 2,
+      "tiles": "1x1",
+      "repo": "https://github.com/aidenatri-png/ecse-chip",
+      "commit": "fcccce1e86438dceaf6b3cd77ea4f6326d8649b5"
+    },
+    {
+      "macro": "tt_um_wokwi_447358337716034561",
+      "address": 841,
+      "x": 12,
+      "y": 2,
+      "tiles": "1x1",
+      "repo": "https://github.com/ohenem/Intro-to-ECSE---Lab-4B---JK-Flip-Flop-Circuit-1-",
+      "commit": "1e23cf128942e5d9217a37adf52a3b9cbadec71d"
+    },
+    {
+      "macro": "tt_um_wokwi_447352099694738433",
+      "address": 843,
+      "x": 13,
+      "y": 2,
+      "tiles": "1x1",
+      "repo": "https://github.com/isiahgg/Isiah-Micheal-Lab-4A",
+      "commit": "7c703727bff4d8ecbd81cc5bb3910ef1509e6426"
+    },
+    {
+      "macro": "tt_um_wokwi_447346482908403713",
+      "address": 845,
+      "x": 14,
+      "y": 2,
+      "tiles": "1x1",
+      "repo": "https://github.com/patela19-rpi/lab-4-up-counter",
+      "commit": "88076380fabedde5ebe2eb75c1c646ced0834495"
+    },
+    {
+      "macro": "tt_um_wokwi_447907135027520513",
+      "address": 847,
+      "x": 15,
+      "y": 2,
+      "tiles": "1x1",
+      "repo": "https://github.com/jaredlesk/ECSE-LAB-4B-Circuit-Design",
+      "commit": "31acb69b231fc5261ad58dc8e8b383dfe45bb49a"
+    },
+    {
+      "macro": "tt_um_wokwi_447173649954615297",
+      "address": 782,
+      "x": 0,
+      "y": 3,
+      "tiles": "1x1",
+      "repo": "https://github.com/Roba250/Intro-to-ECSE-3",
+      "commit": "4f63aae9fb0466aa1ce5d6c506b37cc17032a063"
+    }
+  ]
+}
