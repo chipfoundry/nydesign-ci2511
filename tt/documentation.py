@@ -1,3 +1,4 @@
+import glob
 import logging
 import os
 import subprocess
@@ -45,7 +46,11 @@ class Docs:
         ruby = os.path.join(self.script_dir, "caravel_template", "dump_pic.rb")
         klayoutrc = os.path.join(self.script_dir, "caravel_template", "klayoutrc")
         lyp = os.path.join(self.script_dir, "caravel_template", "caravel.lyp")
-        cmd = f"klayout -l {lyp} gds/user_project_wrapper.gds* -r {ruby} -c {klayoutrc}"
+        # Try both openframe_project_wrapper and user_project_wrapper for compatibility
+        gds_pattern = "gds/openframe_project_wrapper.gds*"
+        if not any(os.path.exists(f) for f in glob.glob(gds_pattern)):
+            gds_pattern = "gds/user_project_wrapper.gds*"
+        cmd = f"klayout -l {lyp} {gds_pattern} -r {ruby} -c {klayoutrc}"
         logging.info(cmd)
         os.system(cmd)
 

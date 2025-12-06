@@ -13,8 +13,8 @@ header-includes:
 - "```{=latex}\n\\usepackage{hyperref}\n\\hypersetup{colorlinks=true,\n        urlcolor=blue,\n
   \       linkcolor=[rgb]{0,0,0.5},\n        allbordercolors={0 0 0},\n        pdfborderstyle={/S/U/W
   1} }\n```\n"
-mainfont: Latin Modern Sans
-subtitle: Project Repository [https://github.com/chipfoundry/nydesign-ci2511.git](https://github.com/chipfoundry/nydesign-ci2511.git)
+mainfont: Helvetica
+subtitle: Project Repository [git@github.com:chipfoundry/nydesign-ci2511.git](git@github.com:chipfoundry/nydesign-ci2511.git)
 title: '![Tiny Tapeout Logo](tt/docs/pics/ttlogo.png){width=15cm}
 
   NYDesign CI2511 Datasheet

@@ -1,8 +1,8 @@
 {
   "name": "NYDesign CI2511",
-  "repo": "https://github.com/chipfoundry/nydesign-ci2511.git",
-  "commit": "7aea492b02764700ff93b57d9dc27691c363c38d",
-  "commit_date": 1765049084,
+  "repo": "git@github.com:chipfoundry/nydesign-ci2511.git",
+  "commit": "41ee7f2aa1c383a079866c58785af1a8e2f96e8b",
+  "commit_date": 1765051364,
   "layout": {
     "muxes": [
       [
