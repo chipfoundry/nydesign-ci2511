@@ -3,11 +3,6 @@ verilog/includes/rom_tile.vmem
 venv/
 sta.log
 
-datasheet.md
-datasheet.pdf
-shuttle_index.json
-shuttle_index.md
-
 # Auto generated ChipFoundry submission files:
 chipfoundry/gds/*.gds
 chipfoundry/gds/*.lef
