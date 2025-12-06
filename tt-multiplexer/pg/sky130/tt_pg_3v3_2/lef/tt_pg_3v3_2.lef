@@ -1,0 +1,77 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO tt_pg_3v3_2
+  CLASS BLOCK ;
+  FOREIGN tt_pg_3v3_2 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 13.800 BY 225.760 ;
+  PIN VDPWR
+    DIRECTION INPUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 0.000 0.000 1.200 224.240 ;
+    END
+  END VDPWR
+  PIN VGND
+    DIRECTION INPUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 1.700 0.000 2.900 224.240 ;
+    END
+  END VGND
+  PIN VAPWR
+    DIRECTION INPUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 3.400 0.000 8.350 224.240 ;
+    END
+  END VAPWR
+  PIN GAPWR
+    DIRECTION OUTPUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 8.850 0.000 13.800 224.240 ;
+    END
+  END GAPWR
+  PIN ctrl
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.423000 ;
+    PORT
+      LAYER met4 ;
+        RECT 0.000 225.260 13.800 225.760 ;
+    END
+  END ctrl
+  OBS
+      LAYER nwell ;
+        RECT 0.000 225.260 13.800 225.510 ;
+        RECT 0.000 223.420 12.530 225.260 ;
+      LAYER pwell ;
+        RECT 0.000 220.600 8.360 223.420 ;
+      LAYER nwell ;
+        RECT 8.360 221.230 12.530 223.420 ;
+      LAYER pwell ;
+        RECT 12.530 221.230 13.890 225.260 ;
+      LAYER nwell ;
+        RECT 8.360 220.600 13.800 221.230 ;
+        RECT 0.000 0.500 13.800 220.600 ;
+      LAYER li1 ;
+        RECT 0.130 0.830 13.740 225.400 ;
+      LAYER met1 ;
+        RECT 0.100 0.800 13.800 225.740 ;
+      LAYER met2 ;
+        RECT 0.100 0.800 13.345 225.540 ;
+      LAYER met3 ;
+        RECT 0.130 10.120 13.800 225.760 ;
+      LAYER met4 ;
+        RECT 2.965 224.770 3.295 224.860 ;
+  END
+END tt_pg_3v3_2
+END LIBRARY
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project_id_check_report>
+  <summary>
+    <project_id_validation>
+      <status>FAIL</status>
+      <reason>No project ID provided for validation</reason>
+    </project_id_validation>
+    <overall_status>FAIL</overall_status>
+  </summary>
+</project_id_check_report>

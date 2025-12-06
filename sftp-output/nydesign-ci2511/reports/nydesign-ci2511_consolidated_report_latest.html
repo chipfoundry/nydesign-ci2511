@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consolidated Report - nydesign-ci2511</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body { 
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+            margin: 0; 
+            background-color: #fafafa; 
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+        
+        .header { 
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%); 
+            color: white; 
+            padding: 24px 0; 
+            margin-bottom: 32px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        
+        .header-content { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 0 24px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between; 
+        }
+        
+        .logo-section { 
+            display: flex; 
+            align-items: center; 
+        }
+        
+        .logo-subtitle { 
+            font-size: 18px; 
+            opacity: 0.9; 
+            margin-left: 20px; 
+            margin-top: 0;
+            font-weight: 500;
+            letter-spacing: 0.01em;
+        }
+        
+        .container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            background-color: white; 
+            padding: 32px; 
+            border-radius: 16px; 
+            box-shadow: 0 8px 32px rgba(0,0,0,0.08); 
+            margin-bottom: 32px;
+            border: 1px solid #f1f5f9;
+        }
+        
+        .report-title { 
+            color: #0f172a; 
+            text-align: center; 
+            font-size: 36px; 
+            margin-bottom: 12px; 
+            font-weight: 600;
+            letter-spacing: -0.025em;
+        }
+        
+        .report-subtitle { 
+            color: #64748b; 
+            text-align: center; 
+            font-size: 18px; 
+            margin-bottom: 32px;
+            font-weight: 400;
+        }
+        
+        h1 { 
+            color: #0f172a; 
+            text-align: center; 
+            border-bottom: 3px solid #3b82f6; 
+            padding-bottom: 16px; 
+            margin-bottom: 32px;
+            font-weight: 600;
+            letter-spacing: -0.025em;
+        }
+        
+        h2 { 
+            color: #1e293b; 
+            border-bottom: 2px solid #e2e8f0; 
+            padding-bottom: 12px; 
+            font-size: 26px;
+            font-weight: 600;
+            letter-spacing: -0.025em;
+        }
+        
+        h3 { 
+            color: #334155; 
+            font-size: 22px; 
+            margin-top: 28px;
+            font-weight: 600;
+            letter-spacing: -0.025em;
+        }
+        
+        .section { 
+            margin: 28px 0; 
+            padding: 24px; 
+            border: 1px solid #e2e8f0; 
+            border-radius: 12px; 
+            background-color: #ffffff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        
+        .status-pass { 
+            color: #059669; 
+            font-weight: 600; 
+        }
+        
+        .status-fail { 
+            color: #dc2626; 
+            font-weight: 600; 
+        }
+        
+        .status-unknown { 
+            color: #64748b; 
+            font-weight: 600; 
+        }
+        
+        .metric { 
+            display: inline-block; 
+            margin: 16px 28px 16px 0; 
+            padding: 20px; 
+            background-color: #f8fafc; 
+            border-radius: 12px; 
+            min-width: 200px; 
+            border-left: 4px solid #3b82f6;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .metric:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+        }
+        
+        .metric-label { 
+            font-size: 0.875em; 
+            color: #64748b; 
+            text-transform: uppercase; 
+            letter-spacing: 0.05em; 
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        .metric-value { 
+            font-size: 1.375em; 
+            font-weight: 600; 
+            color: #0f172a;
+            letter-spacing: -0.01em;
+        }
+        
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin: 16px 0; 
+            border-radius: 12px; 
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        
+        th, td { 
+            padding: 16px; 
+            text-align: left; 
+            border-bottom: 1px solid #e2e8f0; 
+        }
+        
+        th { 
+            background-color: #f1f5f9; 
+            font-weight: 600; 
+            color: #334155;
+            letter-spacing: 0.01em;
+        }
+        
+        .check-pass { 
+            background-color: #f0fdf4; 
+        }
+        
+        .check-fail { 
+            background-color: #fef2f2; 
+        }
+        
+        .check-info-yes { 
+            background-color: #f0fdf4; 
+            color: #16a34a;
+            font-weight: bold;
+        }
+        
+        .check-info-no { 
+            background-color: #f8fafc; 
+            color: #000000;
+        }
+        
+        .timestamp { 
+            color: #64748b; 
+            font-size: 0.875em; 
+            text-align: center;
+            font-weight: 400;
+        }
+        
+        .footer { 
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); 
+            color: white; 
+            text-align: center; 
+            padding: 32px; 
+            margin-top: 48px; 
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+        }
+        
+        .footer-content { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+        }
+        
+        .footer-links { 
+            margin-top: 20px; 
+        }
+        
+        .footer-links a { 
+            color: #93c5fd; 
+            text-decoration: none; 
+            margin: 0 20px;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+        
+        .footer-links a:hover { 
+            color: #60a5fa;
+            text-decoration: underline; 
+        }
+        
+        .chipfoundry-blue { color: #0f172a; }
+        .chipfoundry-light-blue { color: #3b82f6; }
+        .chipfoundry-gray { color: #64748b; }
+        
+        /* Enhanced typography */
+        p { 
+            color: #334155;
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+        
+        code { 
+            background-color: #f1f5f9;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+            font-size: 0.875em;
+            color: #dc2626;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 16px;
+            }
+            
+            .metric {
+                min-width: 100%;
+                margin: 12px 0;
+            }
+            
+            .container {
+                padding: 20px;
+                margin: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <img src="https://static-files.umso.co/lib_lnlnuhLgkYnZdkSC/05rk210br2vbseno.png" alt="ChipFoundry Logo" style="height: 80px; width: auto; margin-right: 20px;">
+                <div class="logo-subtitle">Custom Chip Design and Fabrication</div>
+            </div>
+            <div class="logo-subtitle">Tapeout Tools</div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h1 class="report-title">Consolidated Tapeout and DRC Report</h1>
+        <p class="timestamp">Generated: 2025-12-05 20:56:58</p>
+        
+        <div class="section">
+            <h2>Project Information</h2>
+            <div class="metric">
+                <div class="metric-label">Project Name</div>
+                <div class="metric-value">nydesign-ci2511</div>
+            </div>
+            <div class="metric">
+                <div class="metric-label">User</div>
+                <div class="metric-value">jdicorpo</div>
+            </div>
+            <div class="metric">
+                <div class="metric-label">Project ID</div>
+                <div class="metric-value">25116d14</div>
+            </div>
+            <div class="metric">
+                <div class="metric-label">Project Type</div>
+                <div class="metric-value">openframe</div>
+            </div>
+            <div class="metric">
+                <div class="metric-label">Slot</div>
+                <div class="metric-value">13</div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Tapeout Status</h2>
+            <div class="metric">
+                <div class="metric-label">Status</div>
+                <div class="metric-value status-completed">COMPLETED</div>
+            </div>
+            <div class="metric">
+                <div class="metric-label">Shuttle</div>
+                <div class="metric-value">ci2511</div>
+            </div>
+            <div class="metric">
+                <div class="metric-label">PDK</div>
+                <div class="metric-value">sky130A</div>
+            </div>
+            <div class="metric">
+                <div class="metric-label">Caravel Version</div>
+                <div class="metric-value">CC2509</div>
+            </div>
+            <div class="metric">
+                <div class="metric-label">Target Foundry</div>
+                <div class="metric-value">skywater</div>
+            </div>
+        </div>
+        
+        
+        <div class="section">
+            <h2>GPIO Configuration</h2>
+            <p>This section shows the GPIO configuration for your project based on layout analysis and RTL definitions.</p>
+            <p><strong>Note:</strong> GPIO 0-4 have fixed configurations and are not user-configurable. GPIO 5-37 can be configured to either user or management areas.</p>
+            <p><em>No GPIO configuration data available at this time.</em></p>
+        </div>
+        
+        <div class="section">
+            <h2>DRC Results Summary</h2>
+            <div class="metric">
+                <div class="metric-label">Total Checks</div>
+                <div class="metric-value">29</div>
+            </div>
+            <div class="metric">
+                <div class="metric-label">Passed</div>
+                <div class="metric-value status-pass">26</div>
+            </div>
+            <div class="metric">
+                <div class="metric-label">Failed</div>
+                <div class="metric-value status-fail">3</div>
+            </div>
+            <div class="metric">
+                <div class="metric-label">Total Errors</div>
+                <div class="metric-value status-fail">0</div>
+            </div>
+            <div class="metric">
+                <div class="metric-label">Execution Time</div>
+                <div class="metric-value">54.01 min</div>
+            </div>
+        </div>
+        
+        
+        <div class="section">
+            <h2>Information Checks</h2>
+            <p class="section-description">These checks provide information about design features:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Check Name</th>
+                        <th>Status</th>
+                        <th>Execution Time</th>
+                        <th>Last Updated</th>
+                        <th>Report File</th>
+                    </tr>
+                </thead>
+                <tbody>
+        
+                    <tr>
+                        <td>ChipFoundry SRAM (cs)</td>
+                        <td class="check-info-no">NO</td>
+                        <td>0.18 min</td>
+                        <td>2025-12-05T02:18:30.555520</td>
+                        <td><a href="../outputs/klayout_CF_SRAM_check.xml" target="_blank">View Report</a></td>
+                    </tr>
+            
+                    <tr>
+                        <td>RRAM Layers (rr)</td>
+                        <td class="check-info-no">NO</td>
+                        <td>0.18 min</td>
+                        <td>2025-12-05T02:18:30.555541</td>
+                        <td><a href="../outputs/klayout_rram_layers_check.xml" target="_blank">View Report</a></td>
+                    </tr>
+            
+                    <tr>
+                        <td>OpenRAM (os)</td>
+                        <td class="check-info-no">NO</td>
+                        <td>0.18 min</td>
+                        <td>2025-12-05T02:18:30.555543</td>
+                        <td><a href="../outputs/klayout_open_sram_check.xml" target="_blank">View Report</a></td>
+                    </tr>
+            
+                </tbody>
+            </table>
+        </div>
+        
+        
+        <div class="section">
+            <h2>DRC Validation Checks</h2>
+            <p class="section-description">These checks validate design rules and constraints:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Check Name</th>
+                        <th>Status</th>
+                        <th>Errors</th>
+                        <th>Execution Time</th>
+                        <th>Last Updated</th>
+                        <th>Report File</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr class="check-pass">
+                        <td><strong>Metal Global Density</strong> (md)</td>
+                        <td class="status-pass">PASS</td>
+                        <td>0</td>
+                        <td>14.20 min</td>
+                        <td>2025-12-05T02:18:30.555493</td>
+                        <td><a href="../outputs/klayout_mgld_check.xml" target="_blank">View Report</a></td>
+                    </tr>
+
+                    <tr class="check-pass">
+                        <td><strong>Backend</strong> (be)</td>
+                        <td class="status-pass">PASS</td>
+                        <td>0</td>
+                        <td>9.43 min</td>
+                        <td>2025-12-05T02:18:30.555559</td>
+                        <td><a href="../outputs/klayout_beol_check.xml" target="_blank">View Report</a></td>
+                    </tr>
+
+                    <tr class="check-pass">
+                        <td><strong>Frontend</strong> (fe)</td>
+                        <td class="status-pass">PASS</td>
+                        <td>0</td>
+                        <td>7.38 min</td>
+                        <td>2025-12-05T02:18:30.555564</td>
+                        <td><a href="../outputs/klayout_feol_check.xml" target="_blank">View Report</a></td>
+                    </tr>
+
+                    <tr class="check-pass">
+                        <td><strong>Unknown Layers</strong> (ul)</td>
+                        <td class="status-pass">PASS</td>
+                        <td>0</td>
+                        <td>6.88 min</td>
+                        <td>2025-12-05T02:18:30.555531</td>
+                        <td><a href="../outputs/klayout_unknown_layers_check.xml" target="_blank">View Report</a></td>
+                    </tr>
+
+                    <tr class="check-pass">
+                        <td><strong>Metal 1 Drawn vs Fill</strong> (m1)</td>
+                        <td class="status-pass">PASS</td>
+                        <td>0</td>
+                        <td>3.04 min</td>
+                        <td>2025-12-05T02:18:30.555499</td>
+                        <td><a href="../outputs/klayout_metal1_drawn_vs_fill_check.xml" target="_blank">View Report</a></td>
+                    </tr>
+
+                    <tr class="check-pass">
+                        <td><strong>Metal Tiled Density</strong> (mt)</td>
+                        <td class="status-pass">PASS</td>
+                        <td>0</td>
+                        <td>2.65 min</td>
+                        <td>2025-12-05T02:18:30.555496</td>
+                        <td><a href="../outputs/klayout_metd_check.xml" target="_blank">View Report</a></td>
+                    </tr>
+
+                    <tr class="check-pass">
+                        <td><strong>Metal 2 Drawn vs Fill</strong> (m2)</td>
+                        <td class="status-pass">PASS</td>
+                        <td>0</td>
+                        <td>2.34 min</td>
+                        <td>2025-12-05T02:18:30.555501</td>
+                        <td><a href="../outputs/klayout_metal2_drawn_vs_fill_check.xml" target="_blank">View Report</a></td>
+                    </tr>
+
+                    <tr class="check-pass">
+                        <td><strong>Metal 3 Drawn vs Fill</strong> (m3)</td>
+                        <td class="status-pass">PASS</td>
+                        <td>0</td>
+                        <td>1.46 min</td>
+                        <td>2025-12-05T02:18:30.555504</td>
+                        <td><a href="../outputs/klayout_metal3_drawn_vs_fill_check.xml" target="_blank">View Report</a></td>
+                    </tr>
+
+                    <tr class="check-pass">
+                        <td><strong>Off-Grid</strong> (og)</td>
+                        <td class="status-pass">PASS</td>
+                        <td>0</td>
+                        <td>1.37 min</td>
+                        <td>2025-12-05T02:18:30.555513</td>
+                        <td><a href="../outputs/klayout_grid_check.xml" target="_blank">View Report</a></td>
+                    </tr>
+
+                    <tr class="check-pass">
+                        <td><strong>Metal 4 Drawn vs Fill</strong> (m4)</td>
+                        <td class="status-pass">PASS</td>
+                        <td>0</td>
+                        <td>1.25 min</td>
+                        <td>2025-12-05T02:18:30.555507</td>
+                        <td><a href="../outputs/klayout_metal4_drawn_vs_fill_check.xml" target="_blank">View Report</a></td>
+                    </tr>
+
+                    <tr class="check-pass">
+                        <td><strong>FOM LI Overlap</strong> (fl)</td>
+                        <td class="status-pass">PASS</td>
+                        <td>0</td>
+                        <td>0.80 min</td>
+                        <td>2025-12-05T02:18:30.555510</td>
+                        <td><a href="../outputs/klayout_foml_check.xml" target="_blank">View Report</a></td>
+                    </tr>
+
+                    <tr class="check-pass">
+                        <td><strong>Poly Density</strong> (pd)</td>
+                        <td class="status-pass">PASS</td>
+                        <td>0</td>
+                        <td>0.43 min</td>
+                        <td>2025-12-05T02:18:30.555481</td>
+                        <td><a href="../outputs/klayout_poly_check.xml" target="_blank">View Report</a></td>
+                    </tr>
+
+                    <tr class="check-pass">
+                        <td><strong>Special Created Layers</strong> (cl)</td>
+                        <td class="status-pass">PASS</td>
+                        <td>0</td>
+                        <td>0.33 min</td>
+                        <td>2025-12-05T02:18:30.555550</td>
+                        <td><a href="../outputs/klayout_special_cl_check.xml" target="_blank">View Report</a></td>
+                    </tr>
+
+                    <tr class="check-pass">
+                        <td><strong>Boundary Check</strong> (bc)</td>
+                        <td class="status-pass">PASS</td>
+                        <td>0</td>
+                        <td>0.33 min</td>
+                        <td>2025-12-05T02:18:30.555556</td>
+                        <td><a href="../outputs/klayout_boundary_check.xml" target="_blank">View Report</a></td>
+                    </tr>
+
+                    <tr class="check-pass">
+                        <td><strong>FOM2 (2000x2000)</strong> (f2)</td>
+                        <td class="status-pass">PASS</td>
+                        <td>0</td>
+                        <td>0.30 min</td>
+                        <td>2025-12-05T02:18:30.555527</td>
+                        <td><a href="../outputs/klayout_fom_density_2000_check.xml" target="_blank">View Report</a></td>
+                    </tr>
+
+                    <tr class="check-pass">
+                        <td><strong>FOM1 (700x700)</strong> (f1)</td>
+                        <td class="status-pass">PASS</td>
+                        <td>0</td>
+                        <td>0.29 min</td>
+                        <td>2025-12-05T02:18:30.555525</td>
+                        <td><a href="../outputs/klayout_fom_density_700_check.xml" target="_blank">View Report</a></td>
+                    </tr>
+
+                    <tr class="check-pass">
+                        <td><strong>Missing Cells</strong> (mc)</td>
+                        <td class="status-pass">PASS</td>
+                        <td>0</td>
+                        <td>0.25 min</td>
+                        <td>2025-12-05T02:18:30.555529</td>
+                        <td><a href="../outputs/klayout_missing_cells_check.xml" target="_blank">View Report</a></td>
+                    </tr>
+
+                    <tr class="check-pass">
+                        <td><strong>Spike Check</strong> (sp)</td>
+                        <td class="status-pass">PASS</td>
+                        <td>0</td>
+                        <td>0.19 min</td>
+                        <td>2025-12-05T02:18:30.555517</td>
+                        <td><a href="../outputs/klayout_spike_check.xml" target="_blank">View Report</a></td>
+                    </tr>
+
+                    <tr class="check-pass">
+                        <td><strong>is</strong> (is)</td>
+                        <td class="status-pass">PASS</td>
+                        <td>0</td>
+                        <td>0.19 min</td>
+                        <td>2025-12-05T02:18:30.555522</td>
+                        <td><a href="../outputs/klayout_IFX_SRAM_check.xml" target="_blank">View Report</a></td>
+                    </tr>
+
+                    <tr class="check-fail">
+                        <td><strong>id</strong> (id)</td>
+                        <td class="status-fail">FAIL</td>
+                        <td>0</td>
+                        <td>0.19 min</td>
+                        <td>2025-12-05T02:18:30.555546</td>
+                        <td><a href="../outputs/klayout_id_check.xml" target="_blank">View Report</a></td>
+                    </tr>
+
+                    <tr class="check-pass">
+                        <td><strong>Illegal Character</strong> (ic)</td>
+                        <td class="status-pass">PASS</td>
+                        <td>0</td>
+                        <td>0.18 min</td>
+                        <td>2025-12-05T02:18:30.555538</td>
+                        <td><a href="../outputs/klayout_illegal_char_check.xml" target="_blank">View Report</a></td>
+                    </tr>
+
+                    <tr class="check-pass">
+                        <td><strong>Big FOM Density Delta</strong> (bd)</td>
+                        <td class="status-pass">PASS</td>
+                        <td>0</td>
+                        <td>0.00 min</td>
+                        <td>2025-12-05T02:18:30.555534</td>
+                        <td>No report</td>
+                    </tr>
+
+                    <tr class="check-pass">
+                        <td><strong>Little FOM Density Delta</strong> (ld)</td>
+                        <td class="status-pass">PASS</td>
+                        <td>0</td>
+                        <td>0.00 min</td>
+                        <td>2025-12-05T02:18:30.555536</td>
+                        <td>No report</td>
+                    </tr>
+
+                    <tr class="check-pass">
+                        <td><strong>GPIO Check</strong> (gp)</td>
+                        <td class="status-pass">PASS</td>
+                        <td>0</td>
+                        <td>0.00 min</td>
+                        <td>2025-12-05T02:18:30.555548</td>
+                        <td>No report</td>
+                    </tr>
+
+                    <tr class="check-fail">
+                        <td><strong>User Project</strong> (up)</td>
+                        <td class="status-fail">FAIL</td>
+                        <td>0</td>
+                        <td>0.00 min</td>
+                        <td>2025-12-05T02:18:30.555553</td>
+                        <td>No report</td>
+                    </tr>
+
+                    <tr class="check-fail">
+                        <td><strong>Final Status</strong> (fn)</td>
+                        <td class="status-fail">FAIL</td>
+                        <td>0</td>
+                        <td>0.00 min</td>
+                        <td>2025-12-05T02:18:30.555555</td>
+                        <td>No report</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        
+        <div class="section">
+            <h3>User Wrapper GDS</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>File</strong></td>
+                        <td><code>openframe_project_wrapper.gds</code></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Size</strong></td>
+                        <td>42.22 MB</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Modified</strong></td>
+                        <td>2025-12-05T00:09:53.438000</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Stored Hash</strong></td>
+                        <td><code>2c4f95bbe57732c969f5e7044bd15f28a586ac4bf879fd6ba1f0445f85be3f11</code></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Current Hash</strong></td>
+                        <td><code>2c4f95bbe57732c969f5e7044bd15f28a586ac4bf879fd6ba1f0445f85be3f11</code></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Hash Valid</strong></td>
+                        <td class="status-pass">✓</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        
+        <div class="section">
+            <h3>OASIS File</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>File</strong></td>
+                        <td><code>caravel_25116d14.oas</code></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Size</strong></td>
+                        <td>21.00 MB</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Modified</strong></td>
+                        <td>2025-12-05T01:24:24.260000</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Current Hash</strong></td>
+                        <td><code>b061db65865b1b91dbcfdf3fd7baa53c16df153262d42dd07d694ac57b328f2f</code></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Stored Hash</strong></td>
+                        <td><code>b061db65865b1b91dbcfdf3fd7baa53c16df153262d42dd07d694ac57b328f2f</code></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Hash Valid</strong></td>
+                        <td class="status-pass">✓</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        
+        <div class="section">
+            <h3>OASIS Layout Images</h3>
+            <p>Generated layout images from OASIS files showing the chip design visualization.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 20px; margin: 20px 0;">
+                <div style="flex: 1; min-width: 300px; border: 1px solid #e2e8f0; border-radius: 8px; padding: 15px; background: #f8fafc;">
+                    <h4 style="margin-top: 0; color: #334155;">caravel_layout</h4>
+                    <img src="../outputs/images/caravel_layout.png" alt="OASIS Layout: caravel_layout" 
+                         style="width: 100%; height: auto; border-radius: 4px; margin-bottom: 10px; cursor: pointer;"
+                         onclick="window.open('../outputs/images/caravel_layout.png', '_blank')" 
+                         title="Click to view full size">
+                    <div style="font-size: 0.9em; color: #64748b;">
+                        <div><strong>File:</strong> caravel_layout.png</div>
+                        <div><strong>Size:</strong> 0.26 MB</div>
+                        <div><strong>Modified:</strong> 2025-12-05 20:56:50</div>
+                        <div><strong>Format:</strong> PNG</div>
+                    </div>
+                </div>
+            </div>
+            <p style="margin-top: 15px; font-size: 0.9em; color: #64748b; font-style: italic;">
+                Click on any image to view it in full size. Images are generated from OASIS files using GDSFactory for high-quality visualization.
+            </p>
+        </div>
+        
+    </div>
+    
+    <div class="footer">
+        <div class="footer-content">
+            <div><strong>ChipFoundry</strong> - Empowering the Future of Chip Design</div>
+            <div class="footer-links">
+                <a href="https://chipfoundry.io" target="_blank">Website</a>
+                <a href="https://chipfoundry.io/docs" target="_blank">Documentation</a>
+                <a href="https://chipfoundry.io/support" target="_blank">Support</a>
+            </div>
+            <div style="margin-top: 15px; font-size: 0.9em; opacity: 0.8;">
+                Report generated by ChipFoundry Tapeout Tools
+            </div>
+        </div>
+    </div>
+</body>
+</html>

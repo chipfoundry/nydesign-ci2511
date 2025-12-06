@@ -1,0 +1,109 @@
+Loading input layout: /mnt/shuttle/ci2511/jdicorpo/nydesign-ci2511/gds/openframe_project_wrapper.gds
+/tools/tapeout-tools/rules/boundary_check.drc:51: warning: already initialized constant DRC::DRCEngine::USER_AREA_URX
+/tools/tapeout-tools/rules/boundary_check.drc:46: warning: previous definition of USER_AREA_URX was here
+/tools/tapeout-tools/rules/boundary_check.drc:52: warning: already initialized constant DRC::DRCEngine::USER_AREA_URY
+/tools/tapeout-tools/rules/boundary_check.drc:47: warning: previous definition of USER_AREA_URY was here
+Using openframe user area boundary
+User area boundary: (0, 0) to (3166.63, 4766.63)
+Starting boundary check algorithm...
+Step 1: Loading layouts...
+User layout bounding box (micron): (-2, -2) to (3169, 4769)
+Loading reference golden wrapper: /tools/home/dl/tapeout-tools/golden_wrappers/openframe_project_wrapper.gds
+Reference layout bounding box (micron): (-2, -2) to (3169, 4769)
+Step 2: Defining areas...
+Areas defined: user area, PR boundary, metal 4, metal 5
+Step 3: Processing layouts with boundary trimming...
+Processing user layout...
+User layout has 42 total layers
+Processing only 32 relevant layers for boundary checking
+  Layer 68/16: Starting with 135404 polygons
+  Layer 68/16: After removing user area: 0 polygons
+  Layer 68/20: Starting with 145208 polygons
+  Layer 68/20: After removing user area: 0 polygons
+  Layer 66/20: Starting with 100097 polygons
+  Layer 66/20: After removing user area: 0 polygons
+  Layer 67/20: Starting with 306982 polygons
+  Layer 67/20: After removing user area: 0 polygons
+  Layer 67/16: Starting with 6991 polygons
+  Layer 67/16: After removing user area: 0 polygons
+  Layer 69/20: Starting with 6333 polygons
+  Layer 69/20: After removing user area: 319 polygons
+  Layer 70/20: Starting with 4145 polygons
+  Layer 70/20: After removing user area: 594 polygons
+  Layer 71/20: Starting with 434 polygons
+  Layer 71/20: After removing user area: 0 polygons
+  Layer 71/16: Starting with 164 polygons
+  Layer 71/16: After removing user area: 0 polygons
+  Layer 70/16: Starting with 629 polygons
+  Layer 70/16: After removing user area: 594 polygons
+  Layer 72/20: Starting with 238 polygons
+  Layer 72/20: After removing user area: 0 polygons
+  Layer 69/16: Starting with 319 polygons
+  Layer 69/16: After removing user area: 319 polygons
+User layout processing complete: 12 layers processed, 30 layers skipped
+Processing reference layout...
+Reference layout has 43 total layers
+Processing only 32 relevant layers for boundary checking
+  Reference layer 70/20: 4145 polygons
+  Layer 70/20: Starting with 4145 polygons
+  Layer 70/20: After removing user area: 594 polygons
+  Reference layer 68/16: 135404 polygons
+  Layer 68/16: Starting with 135404 polygons
+  Layer 68/16: After removing user area: 0 polygons
+  Reference layer 68/20: 145208 polygons
+  Layer 68/20: Starting with 145208 polygons
+  Layer 68/20: After removing user area: 0 polygons
+  Reference layer 67/20: 306982 polygons
+  Layer 67/20: Starting with 306982 polygons
+  Layer 67/20: After removing user area: 0 polygons
+  Reference layer 66/20: 100097 polygons
+  Layer 66/20: Starting with 100097 polygons
+  Layer 66/20: After removing user area: 0 polygons
+  Reference layer 67/16: 6991 polygons
+  Layer 67/16: Starting with 6991 polygons
+  Layer 67/16: After removing user area: 0 polygons
+  Reference layer 69/20: 6333 polygons
+  Layer 69/20: Starting with 6333 polygons
+  Layer 69/20: After removing user area: 319 polygons
+  Reference layer 71/20: 434 polygons
+  Layer 71/20: Starting with 434 polygons
+  Layer 71/20: After removing user area: 0 polygons
+  Reference layer 70/16: 629 polygons
+  Layer 70/16: Starting with 629 polygons
+  Layer 70/16: After removing user area: 594 polygons
+  Reference layer 71/16: 164 polygons
+  Layer 71/16: Starting with 164 polygons
+  Layer 71/16: After removing user area: 0 polygons
+  Reference layer 72/20: 238 polygons
+  Layer 72/20: Starting with 238 polygons
+  Layer 72/20: After removing user area: 0 polygons
+  Reference layer 69/16: 319 polygons
+  Layer 69/16: Starting with 319 polygons
+  Layer 69/16: After removing user area: 319 polygons
+  Reference layer 72/16: 238 polygons
+  Layer 72/16: Starting with 238 polygons
+  Layer 72/16: After removing user area: 0 polygons
+Reference layout processing complete: 13 layers processed, 30 layers skipped
+User layout processed: 1826 polygons across 4 layers
+Reference layout processed: 1826 polygons across 4 layers
+Step 4: Saving processed layouts to tapeout/outputs...
+Created output directory: /mnt/shuttle/ci2511/jdicorpo/nydesign-ci2511/tapeout/outputs/gds
+Saving processed user layout to: /mnt/shuttle/ci2511/jdicorpo/nydesign-ci2511/tapeout/outputs/gds/user_processed_boundary_check.gds
+Adding 4 processed user layers to GDS...
+  Adding layer 69/20 with 319 polygons
+  Adding layer 70/20 with 594 polygons
+  Adding layer 70/16 with 594 polygons
+  Adding layer 69/16 with 319 polygons
+✓ User processed layout saved with 4 layers
+Saving processed reference layout to: /mnt/shuttle/ci2511/jdicorpo/nydesign-ci2511/tapeout/outputs/gds/reference_processed_boundary_check.gds
+Adding 4 processed reference layers to GDS...
+  Adding layer 70/20 with 594 polygons
+  Adding layer 69/20 with 319 polygons
+  Adding layer 70/16 with 594 polygons
+  Adding layer 69/16 with 319 polygons
+✓ Reference processed layout saved with 4 layers
+Step 5: Performing XOR between modified layouts...
+XOR completed: 0 differences found
+✓ XOR check PASSED: No violations found in PR boundary areas
+✓ Boundary check PASSED: XOR check found no violations in PR boundary areas
+Boundary check completed

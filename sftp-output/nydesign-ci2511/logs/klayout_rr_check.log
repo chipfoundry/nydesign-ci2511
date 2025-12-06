@@ -1,0 +1,4 @@
+R1C DRC Check: 0 shapes found on layer 201:20
+R1C DRC check completed. Report saved to: /mnt/shuttle/ci2511/jdicorpo/nydesign-ci2511/tapeout/outputs/klayout_rram_layers_check.xml
+Input file: /mnt/shuttle/ci2511/jdicorpo/nydesign-ci2511/tapeout/outputs/oas/caravel_25116d14.oas
+Top cell: caravel_25116d14

@@ -17,6 +17,9 @@ from tech import tech_map
 
 
 def copy_print(src: str, dest: str):
+    if not os.path.exists(src):
+        logging.warning(f"  Skipping missing file: {src}")
+        return
     os.makedirs(os.path.dirname(dest), exist_ok=True)
     logging.info(f"  -> {dest}")
     shutil.copy2(src, dest)
@@ -98,6 +101,8 @@ class ShuttleConfig:
             for project in self.projects:
                 tiles = project.info.tiles
                 width, height = map(int, tiles.split("x"))
+                # Don't add to module_config if already in configured_macros (preconfigured)
+                # to avoid duplicate placements, but still process them in placement matching
                 if project.unprefixed_name not in configured_macros:
                     module_entry = {
                         "name": project.unprefixed_name,

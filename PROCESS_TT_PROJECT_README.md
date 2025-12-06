@@ -158,6 +158,14 @@ This script works seamlessly with:
 - `copy_hardened_project.py` - For copying hardened project files
 - TinyTapeout support tools - For project hardening and submission
 
+## projects.txt Requirements
+
+When building the chip, ensure your `projects.txt` file includes the required preconfigured macros:
+- `https://github.com/TinyTapeout/tt-chip-rom`
+- `https://github.com/TinyTapeout/ttsky25b-factory-test`
+
+These must be listed in `projects.txt` even though they are also defined in `modules.yaml` with fixed positions. They will be processed as regular projects during the build configuration step.
+
 ## Troubleshooting
 
 - **PyYAML not found**: Install with `pip install PyYAML`

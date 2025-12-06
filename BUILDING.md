@@ -32,6 +32,12 @@ pip install -r tt-multiplexer/py/requirements.txt -r tt/requirements.txt
 
 ## Fetching the projects
 
+**Important**: Before running the configuration, ensure your `projects.txt` file includes the required preconfigured macros:
+- `https://github.com/TinyTapeout/tt-chip-rom` (chip_rom)
+- `https://github.com/TinyTapeout/ttsky25b-factory-test` (factory_test)
+
+These must be listed in `projects.txt` even though they are also defined in `modules.yaml` with fixed positions. They will be processed as regular projects.
+
 Run the following commands to generate the configuration for building Tiny Tapeout:
 
 ```bash

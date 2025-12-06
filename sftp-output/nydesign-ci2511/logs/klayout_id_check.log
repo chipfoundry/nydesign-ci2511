@@ -1,0 +1,38 @@
+=== Extra BE Checks XML Script Parameters ===
+Input file: /mnt/shuttle/ci2511/jdicorpo/nydesign-ci2511/tapeout/outputs/oas/caravel_25116d14.oas
+Project ID: 
+Verbose: true
+Visual ID enabled: true
+Electrical ID enabled: true
+GPIO enabled: false
+Caravan mode: false
+Analog mode: false
+Defaults file: 
+Report file: /mnt/shuttle/ci2511/jdicorpo/nydesign-ci2511/tapeout/outputs/klayout_id_check.xml
+Log file: /mnt/shuttle/ci2511/jdicorpo/nydesign-ci2511/tapeout/logs/klayout_id_check.log
+=============================================
+Loaded layout from: /mnt/shuttle/ci2511/jdicorpo/nydesign-ci2511/tapeout/outputs/oas/caravel_25116d14.oas
+Layout contains 1827 cells
+First 10 cell names:
+  0: QD_sky130_fd_pr__hvdfl1sd2__example_55959141808143
+  1: QD_sky130_fd_pr__hvdfl1sd__example_55959141808194
+  2: QD_sky130_fd_pr__dfl1sd2__example_55959141808633
+  3: QD_sky130_fd_pr__hvdfl1sd__example_5595914180894
+  4: QD_sky130_fd_pr__hvdfl1sd__example_55959141808278
+  5: QD_sky130_fd_pr__dfl1sd__example_5595914180868
+  6: QD_sky130_fd_pr__dfl1sd__example_55959141808123
+  7: QD_sky130_fd_pr__hvdfl1sd__example_55959141808122
+  8: QD_sky130_fd_pr__hvdfl1sd2__example_55959141808306
+  9: QD_sky130_fd_pr__hvdfl1sd2__example_55959141808140
+...
+Processing Visual ID blocks...
+Found 0 visual ID block(s)
+Processing Electrical ID blocks...
+Found 0 electrical ID block(s)
+Project ID Check Report
+==================================================
+
+Project ID Validation: FAIL
+Reason: No project ID provided for validation
+
+Overall Status: FAIL

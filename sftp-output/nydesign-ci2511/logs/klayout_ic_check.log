@@ -1,0 +1,5 @@
+Cell Name Check: 0 errors found - no cells contain invalid characters
+Cell name check completed. Report saved to: /mnt/shuttle/ci2511/jdicorpo/nydesign-ci2511/tapeout/outputs/klayout_illegal_char_check.xml
+Input file: /mnt/shuttle/ci2511/jdicorpo/nydesign-ci2511/tapeout/outputs/oas/caravel_25116d14.oas
+Top cell: caravel_25116d14
+Total cells checked: 1827

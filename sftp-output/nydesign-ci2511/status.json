@@ -1,0 +1,14 @@
+{
+  "project_name": "nydesign-ci2511",
+  "username": "jdicorpo",
+  "export_timestamp": "2025-12-05T21:23:43.514621",
+  "status": "completed",
+  "files_exported": 90,
+  "project_config_exported": true,
+  "export_contents": {
+    "outputs": true,
+    "logs": true,
+    "reports": true,
+    "config": true
+  }
+}

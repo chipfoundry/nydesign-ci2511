@@ -1,0 +1,25 @@
+met_tiled_density.drc:: sourcing design file=/mnt/shuttle/ci2511/jdicorpo/nydesign-ci2511/tapeout/outputs/oas/caravel_25116d14.oas topcell= ...
+done.
+flattening chip boundary...
+done.
+step size = 70
+llx=5.965 lly=6.0 urx=3594.035 ury=5194.0
+x_cnt = 51
+y_cnt = 74
+dbu = 0.001
+bbox_area = 18614907.16
+calculating subtile areas (= 3774)...
+tiles per step = 10
+calculating window step densities (= 2730)...
+m1 minimum met_tiled density  = 0.9445
+m1 maximum met_tiled density  = 0.9947
+m2 minimum met_tiled density  = 0.9431
+m2 maximum met_tiled density  = 0.9936
+m3 minimum met_tiled density  = 0.9494
+m3 maximum met_tiled density  = 0.9962
+m4 minimum met_tiled density  = 0.9319
+m4 maximum met_tiled density  = 0.9984
+finish received: success = true
+finish received: success = true
+finish received: success = true
+finish received: success = true

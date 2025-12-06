@@ -1,0 +1,110 @@
+============================================================
+TinyTapeout Project Processing Report
+============================================================
+Generated: 2025-12-04 14:51:14
+Working Directory: /Users/jeffdi/Projects/nydesign/nydesign-ci2511
+Input File: projects.txt
+
+
+============================================================
+📊 Processing Summary
+============================================================
+Total projects: 57
+✅ Successful: 45
+❌ Failed: 12
+
+✅ Successfully processed projects (45):
+   - https://github.com/albert-battagliotti-iv-stack/intro-to-esce-1010-1118 (line 1)
+   - https://github.com/Dodecah3dron/IC-Design-Submission-4bit-s-up-counter (line 2)
+   - https://github.com/madelyndaleo/4-bit-asynchronous-adder (line 3)
+   - https://github.com/bit-Boys/FullOneBitAdder (line 4)
+   - https://github.com/webwizardsaanvi/7-segment-display (line 6)
+   - https://github.com/garywong12345/4-bit-asynchronous-up-counter.git (line 7)
+   - https://github.com/davidtverskoy/Intro-to-ECSE-IC-design-submission (line 9)
+   - https://github.com/42millionpeople/ECSE-1010_Lab-4_7-Segment-Decoder (line 10)
+   - https://github.com/hung-xuan-ngo-savg/2-bits-magnitude-comparator.git (line 11)
+   - https://github.com/lockmunter-collab/IC-Design-Submission (line 12)
+   - https://github.com/cbucher834/Wokwinov21 (line 13)
+   - https://github.com/brandonm1026/Class-24-Activity (line 15)
+   - https://github.com/DJ-Fortissimo/Intro-to-ECSE-Lab-4-Bit-Counter (line 16)
+   - https://github.com/entropicentity/Traffic-Toggling-IC (line 17)
+   - https://github.com/technical-0/intro-to-ecse-demo-1031 (line 18)
+   - https://github.com/Roniel-Peralta/4-Bit-Counter-11-14 (line 33)
+   - https://github.com/jnldzg1013gmailcom/1-bit-adder-circuit (line 20)
+   - https://github.com/notgzelle/1-bit-full-adder-IC-design-submission (line 21)
+   - https://github.com/nonkayra/ECSE-4B.git (line 22)
+   - https://github.com/sgunth29/IC-Design-Class-Activity-24 (line 23)
+   - https://github.com/jodonnell2406/ecse-wokwi-classwork (line 24)
+   - https://github.com/ethansam9/2-Bit-Adder (line 26)
+   - https://github.com/nhoj98/intro-to-ecse-1010-10-31-demo (line 27)
+   - https://github.com/ryan718585/4-bit-ring-counter (line 29)
+   - https://github.com/hung-xuan-ngo-savg/2-bits-magnitude-comparator (line 32)
+   - https://github.com/Roniel-Peralta/4-Bit-Counter-11-14 (line 33)
+   - https://github.com/atscosmo/lab4 (line 34)
+   - https://github.com/henevans25/wokwimultiplexor (line 36)
+   - https://github.com/computersandrew/Class-24-Activity-IC-Design-Submission.git (line 38)
+   - https://github.com/MylesKocsis/7-Segment-Display-Intro-to-ECSE (line 39)
+   - https://github.com/Peter3233/-IC-Design-Submission---one-bit-full-adder.git (line 40)
+   - https://github.com/jaredierardi/IC-Design (line 41)
+   - https://github.com/mattsarkar10/IC-Design (line 43)
+   - https://github.com/elijahrpulga/ECSE-Lab_4A.git (line 45)
+   - https://github.com/elenidough/Seven-Segment-Decoder- (line 47)
+   - https://github.com/Rodyker/intro-to-ecse-IC (line 48)
+   - https://github.com/jeaink0607/lab4b (line 49)
+   - https://github.com/jacknotaro7/JackNotaro (line 50)
+   - https://github.com/jpetrarca4/ECSE-1010-IC-Design (line 51)
+   - https://github.com/melissagdeluise-png/ecse-2bit-full-adder-circuit.git (line 52)
+   - https://github.com/nick-gl/Lab_4A_adder (line 53)
+   - https://github.com/orbitle/ECSE1010-Class-24-Activity (line 54)
+   - https://github.com/tommybarker2/Wokwi-Template (line 55)
+   - https://github.com/Xandrosy/IC-Design (line 56)
+   - https://github.com/elin20-hub/lab4b (line 57)
+
+============================================================
+📋 Detailed Failure Report
+============================================================
+
+❌ Invalid URLs (9):
+   These URLs are not valid GitHub repository URLs:
+   - https://gds-viewer.tinytapeout.com/?model=https://jaredlesk.github.io/ECSE-LAB-4B-Circuit-Design/tinytapeout.oas&pdk=sky130A (line 5)
+     Error: GDS viewer URL (not a GitHub repository)
+   - https://github.com/Usauce/Lab-4A/tree/main (line 8)
+     Error: GitHub URL contains invalid path (use base repository URL, e.g., https://github.com/user/repo.git)
+   - https://github.com/LeeASC10679/4-bit-synchronous-up-counter-using-T-flip-flop-ICs-/actions (line 14)
+     Error: GitHub URL contains invalid path (use base repository URL, e.g., https://github.com/user/repo.git)
+   - https://github.com/aidenatri-png/ecse-chip/actions (line 28)
+     Error: GitHub URL contains invalid path (use base repository URL, e.g., https://github.com/user/repo.git)
+   - https://github.com/ohenem/Intro-to-ECSE---Lab-4B---JK-Flip-Flop-Circuit-1-/actions (line 30)
+     Error: GitHub URL contains invalid path (use base repository URL, e.g., https://github.com/user/repo.git)
+   - https://github.com/isiahgg/Isiah-Micheal-Lab-4A/actions (line 31)
+     Error: GitHub URL contains invalid path (use base repository URL, e.g., https://github.com/user/repo.git)
+   - https://wokwi.com/projects/447983687789484033 (line 37)
+     Error: Wokwi project URL (not a GitHub repository)
+   - https://wokwi.com/projects/447983049312483329 (line 44)
+     Error: Wokwi project URL (not a GitHub repository)
+   - https://wokwi.com/projects/447983049312483329 (line 44)
+     Error: Wokwi project URL (not a GitHub repository)
+
+🔒 Private or Inaccessible Repositories (2):
+   These repositories are private, not found, or inaccessible:
+   - https://github.com/CjDippolito1615/ECSE-Class-24-Activity-.git (line 25)
+     Error: Repository not found during clone
+   - https://github.com/patela19-rpi/lab-4-up-counte (line 46)
+     Error: Repository check timed out (may be private or network issue)
+
+⚠️  Processing Errors (1):
+   These repositories had errors during processing:
+   - https://github.com/dseligrpi/ECSEActivity24 (line 35)
+     Error Type: config_error
+     Message: Failed to create user configuration
+
+============================================================
+📈 Summary Statistics
+============================================================
+Total URLs processed: 57
+✅ Successful: 45 (78%)
+❌ Invalid URLs: 9 (15%)
+🔒 Private/Inaccessible: 2 (3%)
+⚠️  Processing Errors: 1 (1%)
+
+ℹ️  Note: Projects are overwritten by default. Use --skip-existing to skip existing projects.

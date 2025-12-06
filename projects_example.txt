@@ -1,0 +1,16 @@
+# Example projects list file
+# One GitHub URL per line
+# Lines starting with # are ignored
+# Empty lines are ignored
+
+# IMPORTANT: Preconfigured macros MUST be included in this list
+# These are required system projects that must be present:
+https://github.com/TinyTapeout/tt-chip-rom
+https://github.com/TinyTapeout/ttsky25b-factory-test
+
+# Example Wokwi project
+# https://github.com/user/wokwi-project.git
+
+# Example Verilog project
+# https://github.com/user/verilog-project.git
+

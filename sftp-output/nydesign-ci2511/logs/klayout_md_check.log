@@ -1,0 +1,56 @@
+Loading input: /mnt/shuttle/ci2511/jdicorpo/nydesign-ci2511/tapeout/outputs/oas/caravel_25116d14.oas
+Top cell: caravel_25116d14
+Starting Global Metal Density checks
+
+Validating seal ring...
+Seal ring validation passed - proceeding with density checks
+
+START: LI Density Checks
+li.global: Density = 53.98% (Check area: 18614446.42, Metal area: 10048305.6)
+END: LI Density Checks
+
+START: METAL1 Density Checks
+met1.global: Density = 51.33% (Check area: 18614446.42, Metal area: 9554161.7)
+END: METAL1 Density Checks
+
+START: METAL2 Density Checks
+met2.global: Density = 51.09% (Check area: 18614446.42, Metal area: 9511025.49)
+END: METAL2 Density Checks
+
+START: METAL3 Density Checks
+met3.global: Density = 48.39% (Check area: 18614446.42, Metal area: 9007030.0)
+END: METAL3 Density Checks
+
+START: METAL4 Density Checks
+met4.global: Density = 53.77% (Check area: 18614446.42, Metal area: 10009419.19)
+END: METAL4 Density Checks
+
+================================================================================
+GLOBAL METAL DENSITY CHECK RESULTS
+================================================================================
+LI Global Density = 53.98% to limits of 33.0% - 62.0% - PASS
+METAL1 Global Density = 51.33% to limits of 33.0% - 62.0% - PASS
+METAL2 Global Density = 51.09% to limits of 33.0% - 62.0% - PASS
+METAL3 Global Density = 48.39% to limits of 33.0% - 62.0% - PASS
+METAL4 Global Density = 53.77% to limits of 33.0% - 62.0% - PASS
+
+Summary:
+  Input file: /mnt/shuttle/ci2511/jdicorpo/nydesign-ci2511/tapeout/outputs/oas/caravel_25116d14.oas
+  Top cell: caravel_25116d14
+  LI checks: ENABLED (min: 33.0%, max: 62.0%)
+  METAL1 checks: ENABLED (min: 33.0%, max: 62.0%)
+  METAL2 checks: ENABLED (min: 33.0%, max: 62.0%)
+  METAL3 checks: ENABLED (min: 33.0%, max: 62.0%)
+  METAL4 checks: ENABLED (min: 33.0%, max: 62.0%)
+
+Report file: /mnt/shuttle/ci2511/jdicorpo/nydesign-ci2511/tapeout/outputs/klayout_mgld_check.xml
+Execution time: 849.43 seconds
+
+OVERALL RESULT: PASS - All density checks passed
+================================================================================
+
+================================================================================
+GENERATING XML REPORT
+================================================================================
+No violations found - XML report generated with success message
+================================================================================

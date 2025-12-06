@@ -1,0 +1,53 @@
+minimum poly density = 10.0689%
+maximum poly density = 36.6040%
+================================================================================
+KLAYOUT POLY DENSITY CHECK (TilingProcessor Version)
+================================================================================
+Started: 2025-12-05 01:24:41 +0000
+Input file: /mnt/shuttle/ci2511/jdicorpo/nydesign-ci2511/tapeout/outputs/oas/caravel_25116d14.oas
+Top cell: caravel_25116d14
+Parameters:
+  - Min poly density: 8.0%
+  - Max poly density: 38.0%
+  - Window size: 700.0 um x 700.0 um
+  - Step size: 70.0 um
+  - Output density report: true
+  - Verbose output: false
+  - Debug output: false
+  - XML report file: /mnt/shuttle/ci2511/jdicorpo/nydesign-ci2511/tapeout/outputs/klayout_poly_check.xml
+Layout dimensions: 3588.07 um x 5188.0 um
+================================================================================
+
+Processing tiles with TilingProcessor...
+finish received: success = true
+Processing results...
+calculating window step densities (= 2730)...
+Poly density check completed:
+- Window size: 700.0 um x 700.0 um
+- Step size: 70.0 um
+- Density limits: 8.0% - 38.0%
+- Measured density range: 10.07% - 36.6%
+- Total tiles processed: 2730
+- Total violations found: 0
+
+================================================================================
+POLY DENSITY REPORT
+================================================================================
+Tile X      Tile Y      Width    Height   Density    Status
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+SUMMARY:
+Total tiles: 2730
+Passing: 2730 (100.0%)
+Failing (low density): 0 (0.0%)
+Failing (high density): 0 (0.0%)
+Measured density range: 10.07% - 36.6%
+PASS: Density delta range 26.54% is within allowed delta of 30.0%
+================================================================================
+
+================================================================================
+GENERATING XML REPORT
+================================================================================
+No violations found - XML report generated with success message
+================================================================================
+Poly density analysis complete. Total violations: 0

@@ -1,0 +1,74 @@
+Loading input: /mnt/shuttle/ci2511/jdicorpo/nydesign-ci2511/tapeout/outputs/oas/caravel_25116d14.oas
+Top cell: caravel_25116d14
+/tools/tapeout-tools/rules/metal_drawn_fill_checks.drc:128: warning: already initialized constant DRC::DRCEngine::CHECK_MET2
+/tools/tapeout-tools/rules/metal_drawn_fill_checks.drc:115: warning: previous definition of CHECK_MET2 was here
+Starting Metal Layers DRC checks
+START: METAL2 Layer Checks
+"polygons" in: metal_drawn_fill_checks.drc:234
+    Polygons (raw): 451332 (flat)  32799 (hierarchical)
+    Elapsed: 0.130s  Memory: 1336.00M
+"polygons" in: metal_drawn_fill_checks.drc:235
+    Polygons (raw): 9419700 (flat)  9419700 (hierarchical)
+    Elapsed: 8.770s  Memory: 1491.00M
+START: m2 Fill
+m2 fill Width
+"width" in: metal_drawn_fill_checks.drc:240
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 72.050s  Memory: 2817.00M
+"output" in: metal_drawn_fill_checks.drc:240
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 2818.00M
+m2 Fill Space to m2 Drawn
+"separation" in: metal_drawn_fill_checks.drc:243
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 59.000s  Memory: 2934.00M
+"output" in: metal_drawn_fill_checks.drc:243
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 2934.00M
+m2 Fill Space to m2 Fill
+"space" in: metal_drawn_fill_checks.drc:246
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 40.850s  Memory: 3047.00M
+"output" in: metal_drawn_fill_checks.drc:246
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 2935.00M
+m2 Fill area
+"with_area" in: metal_drawn_fill_checks.drc:249
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 5.410s  Memory: 2935.00M
+"output" in: metal_drawn_fill_checks.drc:249
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 2935.00M
+m2 Fill holes
+"holes" in: metal_drawn_fill_checks.drc:252
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 2.480s  Memory: 2935.00M
+"with_area" in: metal_drawn_fill_checks.drc:252
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 2935.00M
+"output" in: metal_drawn_fill_checks.drc:252
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 2935.00M
+m2 fill overlap m2 drawn
+"&" in: metal_drawn_fill_checks.drc:255
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 57.770s  Memory: 2942.00M
+"output" in: metal_drawn_fill_checks.drc:255
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.040s  Memory: 2942.00M
+END: METAL2 Layer Checks
+
+Metal Layers DRC Summary:
+  Input file: /mnt/shuttle/ci2511/jdicorpo/nydesign-ci2511/tapeout/outputs/oas/caravel_25116d14.oas
+  Top cell: caravel_25116d14
+  LI checks: DISABLED
+  METAL1 checks: DISABLED
+  METAL2 checks: ENABLED
+  METAL3 checks: DISABLED
+  METAL4 checks: DISABLED
+
+Report file: /mnt/shuttle/ci2511/jdicorpo/nydesign-ci2511/tapeout/outputs/klayout_metal2_drawn_vs_fill_check.xml
+Execution time: 138.16 seconds
+DRC checks completed
+Writing report database: /mnt/shuttle/ci2511/jdicorpo/nydesign-ci2511/tapeout/outputs/klayout_metal2_drawn_vs_fill_check.xml ..
+Total elapsed: 255.950s  Memory: 2691.00M

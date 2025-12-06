@@ -1,0 +1,16 @@
+Starting Path Spike Detection
+Input file: /mnt/shuttle/ci2511/jdicorpo/nydesign-ci2511/tapeout/outputs/oas/caravel_25116d14.oas
+Report file: /mnt/shuttle/ci2511/jdicorpo/nydesign-ci2511/tapeout/outputs/klayout_spike_check.xml
+Verbose mode: false
+Analyzing cell: caravel_25116d14
+  Found 0 total shapes, 0 paths, 0 spikes in poly
+  Found 0 total shapes, 0 paths, 0 spikes in li
+  Found 0 total shapes, 0 paths, 0 spikes in m1
+  Found 0 total shapes, 0 paths, 0 spikes in m2
+  Found 0 total shapes, 0 paths, 0 spikes in m3
+  Found 0 total shapes, 0 paths, 0 spikes in m4
+  Found 0 total shapes, 0 paths, 0 spikes in m5
+Path spike detection completed in 8.947648215 seconds
+RESULT: PASSED - No path spikes detected
+Report saved to: /mnt/shuttle/ci2511/jdicorpo/nydesign-ci2511/tapeout/outputs/klayout_spike_check.xml
+Load the report in KLayout via Tools > Marker Browser > Load
